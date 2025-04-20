@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Button</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #f0f0f0;
+            overflow: hidden;
+            position: fixed;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .emergency-button {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #ff0000;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            transition: transform 0.2s;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .emergency-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="emergency-button" id="emergencyButton">AIUTO</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
